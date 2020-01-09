@@ -23,6 +23,34 @@ namespace ctrl_doc
         public MainWindow()
         {
             InitializeComponent();
+            target.Children.Add(new buscar_doc());
+        }
+
+        private void Menu_buscar_doc_Click(object sender, RoutedEventArgs e)
+        {
+            target.Children.Clear();
+            target.Children.Add(new buscar_doc());
+        }
+
+        private void Menu_ir_doc_Click(object sender, RoutedEventArgs e)
+        {
+            target.Children.Clear();
+            target.Children.Add(new ramasUI());
+        }
+
+        private void Menu_cancelados_Click(object sender, RoutedEventArgs e)
+        {
+            target.Children.Clear();
+        }
+
+        private void Menu_registrar_Click(object sender, RoutedEventArgs e)
+        {
+            target.Children.Clear();
+        }
+
+        private void Menu_salir_Click(object sender, RoutedEventArgs e)
+        {
+            Environment.Exit(1);
         }
     }
 }

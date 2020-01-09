@@ -5,8 +5,20 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ctrl_doc"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        
-    </Grid>
+        Title="Control Documental" Height="450" Width="800">
+    <StackPanel>
+        <Menu>
+            <MenuItem Header="Inicio">
+                <MenuItem Header="Buscar documento" Name="menu_buscar_doc" Click="Menu_buscar_doc_Click"></MenuItem>
+                <MenuItem Header="Ir a documentos" Name="menu_ir_doc" Click="Menu_ir_doc_Click"></MenuItem>
+                <MenuItem Header="Ver cancelados" Name="menu_cancelados" Click="Menu_cancelados_Click"></MenuItem>
+                <MenuItem Header="Registrar documento" Name="menu_registrar" Click="Menu_registrar_Click"></MenuItem>
+                <MenuItem Header="Salir" Name="menu_salir" Click="Menu_salir_Click"></MenuItem>
+            </MenuItem>
+        </Menu>
+        <Grid Name="target">
+
+        </Grid>
+    </StackPanel>
+    
 </Window>
