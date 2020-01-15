@@ -55,10 +55,25 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="carpetasUI.xaml.cs">
+      <DependentUpon>carpetasUI.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="datos.cs" />
+    <Compile Include="documentos.xaml.cs">
+      <DependentUpon>documentos.xaml</DependentUpon>
+    </Compile>
     <Compile Include="ramasUI.xaml.cs">
       <DependentUpon>ramasUI.xaml</DependentUpon>
     </Compile>
     <Page Include="buscar_doc.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="carpetasUI.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="documentos.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

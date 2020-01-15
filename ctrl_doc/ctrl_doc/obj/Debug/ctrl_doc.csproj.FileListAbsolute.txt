@@ -17,3 +17,7 @@ C:\Users\chave\OneDrive\Documentos\GitHub\ALEXA\ctrl_doc\ctrl_doc\obj\Debug\busc
 C:\Users\chave\OneDrive\Documentos\GitHub\ALEXA\ctrl_doc\ctrl_doc\obj\Debug\buscar_doc.baml
 C:\Users\chave\OneDrive\Documentos\GitHub\ALEXA\ctrl_doc\ctrl_doc\obj\Debug\ramasUI.g.cs
 C:\Users\chave\OneDrive\Documentos\GitHub\ALEXA\ctrl_doc\ctrl_doc\obj\Debug\ramasUI.baml
+C:\Users\chave\OneDrive\Documentos\GitHub\ALEXA\ctrl_doc\ctrl_doc\obj\Debug\carpetasUI.g.cs
+C:\Users\chave\OneDrive\Documentos\GitHub\ALEXA\ctrl_doc\ctrl_doc\obj\Debug\carpetasUI.baml
+C:\Users\chave\OneDrive\Documentos\GitHub\ALEXA\ctrl_doc\ctrl_doc\obj\Debug\documentos.g.cs
+C:\Users\chave\OneDrive\Documentos\GitHub\ALEXA\ctrl_doc\ctrl_doc\obj\Debug\documentos.baml
