@@ -55,6 +55,12 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="blank.xaml.cs">
+      <DependentUpon>blank.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="canceladoUI.xaml.cs">
+      <DependentUpon>canceladoUI.xaml</DependentUpon>
+    </Compile>
     <Compile Include="carpetasUI.xaml.cs">
       <DependentUpon>carpetasUI.xaml</DependentUpon>
     </Compile>
@@ -65,7 +71,21 @@
     <Compile Include="ramasUI.xaml.cs">
       <DependentUpon>ramasUI.xaml</DependentUpon>
     </Compile>
+    <Compile Include="rdocumentoUI.xaml.cs">
+      <DependentUpon>rdocumentoUI.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="rpersonalUI.xaml.cs">
+      <DependentUpon>rpersonalUI.xaml</DependentUpon>
+    </Compile>
+    <Page Include="blank.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="buscar_doc.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="canceladoUI.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -93,6 +113,14 @@
       <SubType>Code</SubType>
     </Compile>
     <Page Include="ramasUI.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="rdocumentoUI.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="rpersonalUI.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

@@ -1,0 +1,31 @@
+﻿<UserControl x:Class="ctrl_doc.rpersonalUI"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:ctrl_doc"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+    <StackPanel>
+        <Label Content="Registro de personal" FontSize="24" Margin="0,30,0,0" HorizontalAlignment="Center"></Label>
+
+        <Label Content="Nombre Completo:" Margin="40,0,0,0"></Label>
+        <TextBox x:Name="txtName" Width="700"></TextBox>
+        
+        <WrapPanel Margin="50,20,0,0">
+            <StackPanel>
+                <Label Content="Puesto:"></Label>
+                <ComboBox Name="cbxPuesto" Width="150"></ComboBox>
+            </StackPanel>
+            <StackPanel Margin="100,0,0,0">
+                <Label Content="M/O:"></Label>
+                <ComboBox Name="cbxOM" Width="150"></ComboBox>
+            </StackPanel>
+            <StackPanel Margin="100,0,0,0">
+                <Label Content="Area:"></Label>
+                <ComboBox Name="cbxArea" Width="150"></ComboBox>
+            </StackPanel>
+        </WrapPanel>
+        <Button Content="Registrar" Width="150" HorizontalAlignment="Right" Margin="0,100,50,0"></Button>
+    </StackPanel>
+</UserControl>

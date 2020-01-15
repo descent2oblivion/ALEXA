@@ -5,17 +5,17 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ctrl_doc"
         mc:Ignorable="d"
-        Title="documentos" Height="450" Width="800">
+        Title="documentos" ResizeMode="NoResize" Height="450" Width="800">
     <StackPanel>
         <Label Name="lblTitulo" Content="x" FontSize="24" Margin="0,30,0,0" HorizontalAlignment="Center"/>
         <ScrollViewer MaxHeight="350">
-            <DataGrid Name="dgDocumentos"  MaxHeight="350" CanUserResizeRows="False" CanUserResizeColumns="False" IsReadOnly="True" GridLinesVisibility="None">
+            <DataGrid Name="dgDocumentos"  MaxHeight="350" CanUserReorderColumns="False" CanUserResizeRows="False" CanUserResizeColumns="False" IsReadOnly="True" GridLinesVisibility="None">
                 <DataGrid.ContextMenu>
                     <ContextMenu>
-                        <MenuItem Header="Editar"></MenuItem>
-                        <MenuItem Header="Historial"></MenuItem>
-                        <MenuItem Header="Cancelar"></MenuItem>
-                        <MenuItem Header="habilitar"></MenuItem>
+                        <MenuItem Name="menu_editar" Header="Editar" Click="Menu_editar_Click"></MenuItem>
+                        <MenuItem Name="menu_historial" Header="Historial" Click="Menu_historial_Click"></MenuItem>
+                        <MenuItem Name="menu_cancelar" Header="Cancelar" Click="Menu_cancelar_Click"></MenuItem>
+                        <MenuItem Name="menu_habilitar" Header="Habilitar" Click="Menu_habilitar_Click"></MenuItem>
                     </ContextMenu>
                 </DataGrid.ContextMenu>            
             </DataGrid>

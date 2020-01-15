@@ -20,12 +20,16 @@ namespace ctrl_doc
     /// </summary>
     public partial class documentos : Window
     {
+        string rama, carpeta;
+
         public documentos(string r, string c)
         {
             InitializeComponent();
             lblTitulo.Content = string.Format("{0}/{1}",r, c);
             datos d = new datos();
             populate(d.puestos, "puesto");
+            rama = r;
+            carpeta = c;
         }
 
         public void populate(string[] arreglo, string t)
@@ -43,6 +47,35 @@ namespace ctrl_doc
                 r++;
             }
             dgDocumentos.ItemsSource = dt.DefaultView;
+        }
+
+        private void Menu_editar_Click(object sender, RoutedEventArgs e)
+        {
+            int si = dgDocumentos.SelectedIndex;
+            if (si >= 0)
+            {
+                DataTable dt = new DataTable();
+                dt = ((DataView)dgDocumentos.ItemsSource).ToTable();
+                int cod = Convert.ToInt32(dt.Rows[si][0]);
+                string doc = dt.Rows[si][1].ToString();
+                blank b = new blank(new rdocumentoUI(cod, doc, rama, carpeta));
+                b.ShowDialog();
+            }
+        }
+
+        private void Menu_historial_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Menu_cancelar_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Menu_habilitar_Click(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }

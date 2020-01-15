@@ -41,16 +41,24 @@ namespace ctrl_doc
         private void Menu_cancelados_Click(object sender, RoutedEventArgs e)
         {
             target.Children.Clear();
+            target.Children.Add(new canceladoUI());
         }
 
         private void Menu_registrar_Click(object sender, RoutedEventArgs e)
         {
             target.Children.Clear();
+            target.Children.Add(new rdocumentoUI());
         }
 
         private void Menu_salir_Click(object sender, RoutedEventArgs e)
         {
             Environment.Exit(1);
+        }
+
+        private void Menu_personal_Click(object sender, RoutedEventArgs e)
+        {
+            target.Children.Clear();
+            target.Children.Add(new rpersonalUI());
         }
     }
 }
