@@ -26,6 +26,6 @@
                 <ComboBox Name="cbxArea" Width="150"></ComboBox>
             </StackPanel>
         </WrapPanel>
-        <Button Content="Registrar" Width="150" HorizontalAlignment="Right" Margin="0,100,50,0"></Button>
+        <Button Name="btnReg" Click="btnReg_Click" Content="Registrar" Width="150" HorizontalAlignment="Right" Margin="0,100,50,0"></Button>
     </StackPanel>
 </UserControl>

@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.Data;
 
 namespace ctrl_doc
 {
@@ -20,24 +21,35 @@ namespace ctrl_doc
     /// </summary>
     public partial class rpersonalUI : UserControl
     {
-        datos p, m, a;
+        clsDB db = new clsDB();
         public rpersonalUI()
         {
             InitializeComponent();
-            p = new datos();
-            m = new datos();
-            a = new datos();
 
-            fillcbx(cbxPuesto, p.puestos);
-            fillcbx(cbxOM, m.mo);
-            fillcbx(cbxArea, a.areas);
+            fill(cbxPuesto, db.read("select puestos.puesto from puestos"));
+            fill(cbxArea, db.read("select arearps.arearp from arearps"));
+            fill(cbxOM, db.read("select mos.mo from mos"));
         }
 
-        public void fillcbx(ComboBox cbx, string [] arreglo)
+        public void fill(ComboBox cbx, DataTable dt)
         {
-            foreach (string item in arreglo)
+            for (int i = 0; i < dt.Rows.Count; i++)
             {
-                cbx.Items.Add(item);
+                cbx.Items.Add(dt.Rows[i][0]);
+            }
+        }
+
+        private void btnReg_Click(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+                string cmd = string.Format("regPers '{0}','{1}','{2}','{3}'", txtName.Text, cbxPuesto.Text, cbxOM.Text, cbxArea.Text);
+                db.write(cmd);
+                MessageBox.Show("Registro exitoso");
+            }
+            catch (Exception z)
+            {
+                MessageBox.Show(z.Message);
             }
         }
     }

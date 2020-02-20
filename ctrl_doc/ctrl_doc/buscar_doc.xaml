@@ -8,7 +8,7 @@
              d:DesignHeight="450" d:DesignWidth="800">
     <StackPanel>
         <Label Content="Buscar Documento" HorizontalAlignment="Center" FontSize="24" Margin="0,50,0,0"/>
-        <TextBox Name="txtSearchDoc" Width="400" TextWrapping="Wrap" AcceptsReturn="False" Margin="0,30,0,0"/>
+        <TextBox Name="txtSearchDoc" KeyUp="txtSearchDoc_KeyUp" Width="400" TextWrapping="Wrap" AcceptsReturn="False" Margin="0,30,0,0"/>
         <StackPanel HorizontalAlignment="Center" Margin="0,20,0,0">
             <RadioButton Name="radio_name" Content="Buscar por nombre"/>
             <RadioButton Name="radio_code" Content="Buscar por codigo"/>

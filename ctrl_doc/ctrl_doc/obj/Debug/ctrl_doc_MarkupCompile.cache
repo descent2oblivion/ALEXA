@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\Emmanuel\Documents\GitHub\ALEXA\ctrl_doc\ctrl_doc\obj\Debug\
+C:\Users\chave\OneDrive\Documentos\GitHub\ALEXA\ctrl_doc\ctrl_doc\obj\Debug\
 ctrl_doc
 none
 false
 DEBUG;TRACE
-C:\Users\Emmanuel\Documents\GitHub\ALEXA\ctrl_doc\ctrl_doc\App.xaml
-9295807981
-
-14-1835518550
+C:\Users\chave\OneDrive\Documentos\GitHub\ALEXA\ctrl_doc\ctrl_doc\App.xaml
+13974926957
+2-1699930836
+19-1287485553
 131569487696
-blank.xaml;buscar_doc.xaml;canceladoUI.xaml;carpetasUI.xaml;documentos.xaml;MainWindow.xaml;ramasUI.xaml;rdocumentoUI.xaml;rpersonalUI.xaml;
+blank.xaml;buscar_doc.xaml;canceladoUI.xaml;cancelarDoc.xaml;carpetasUI.xaml;documentos.xaml;habilitarDoc.xaml;historial.xaml;inicio.xaml;MainWindow.xaml;ramasUI.xaml;rdocumentoUI.xaml;rpersonalUI.xaml;
 
 False
 
