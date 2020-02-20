@@ -23,6 +23,8 @@ namespace ctrl_doc
         public MainWindow()
         {
             InitializeComponent();
+            inicio i = new inicio();
+            i.ShowDialog();
             target.Children.Add(new buscar_doc());
         }
 

@@ -21,11 +21,11 @@ namespace ctrl_doc
     /// </summary>
     public partial class canceladoUI : UserControl
     {
+        clsDB db = new clsDB();
         public canceladoUI()
         {
             InitializeComponent();
-            datos d = new datos();
-            populate(d.areas, "areas");
+            dgDocumentos.ItemsSource = db.read("verCancelados").DefaultView;
         }
 
         public void populate(string[] arreglo, string t)

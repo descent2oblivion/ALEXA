@@ -26,6 +26,16 @@ C:\Users\chave\OneDrive\Documentos\GitHub\ALEXA\ctrl_doc\ctrl_doc\obj\Release\rp
 C:\Users\chave\OneDrive\Documentos\GitHub\ALEXA\ctrl_doc\ctrl_doc\obj\Release\ctrl_doc.g.resources
 C:\Users\chave\OneDrive\Documentos\GitHub\ALEXA\ctrl_doc\ctrl_doc\obj\Release\ctrl_doc.Properties.Resources.resources
 C:\Users\chave\OneDrive\Documentos\GitHub\ALEXA\ctrl_doc\ctrl_doc\obj\Release\ctrl_doc.csproj.GenerateResource.cache
-C:\Users\chave\OneDrive\Documentos\GitHub\ALEXA\ctrl_doc\ctrl_doc\obj\Release\ctrl_doc.csproj.CoreCompileInputs.cache
 C:\Users\chave\OneDrive\Documentos\GitHub\ALEXA\ctrl_doc\ctrl_doc\obj\Release\ctrl_doc.exe
 C:\Users\chave\OneDrive\Documentos\GitHub\ALEXA\ctrl_doc\ctrl_doc\obj\Release\ctrl_doc.pdb
+C:\Users\chave\OneDrive\Documentos\GitHub\ALEXA\ctrl_doc\ctrl_doc\obj\Release\cancelarDoc.g.cs
+C:\Users\chave\OneDrive\Documentos\GitHub\ALEXA\ctrl_doc\ctrl_doc\obj\Release\cancelarDoc.baml
+C:\Users\chave\OneDrive\Documentos\GitHub\ALEXA\ctrl_doc\ctrl_doc\bin\Release\BDD.mdf
+C:\Users\chave\OneDrive\Documentos\GitHub\ALEXA\ctrl_doc\ctrl_doc\bin\Release\BDD_log.ldf
+C:\Users\chave\OneDrive\Documentos\GitHub\ALEXA\ctrl_doc\ctrl_doc\obj\Release\habilitarDoc.g.cs
+C:\Users\chave\OneDrive\Documentos\GitHub\ALEXA\ctrl_doc\ctrl_doc\obj\Release\historial.g.cs
+C:\Users\chave\OneDrive\Documentos\GitHub\ALEXA\ctrl_doc\ctrl_doc\obj\Release\inicio.g.cs
+C:\Users\chave\OneDrive\Documentos\GitHub\ALEXA\ctrl_doc\ctrl_doc\obj\Release\ctrl_doc_Content.g.cs
+C:\Users\chave\OneDrive\Documentos\GitHub\ALEXA\ctrl_doc\ctrl_doc\obj\Release\habilitarDoc.baml
+C:\Users\chave\OneDrive\Documentos\GitHub\ALEXA\ctrl_doc\ctrl_doc\obj\Release\historial.baml
+C:\Users\chave\OneDrive\Documentos\GitHub\ALEXA\ctrl_doc\ctrl_doc\obj\Release\inicio.baml

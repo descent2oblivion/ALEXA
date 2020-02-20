@@ -21,15 +21,15 @@ namespace ctrl_doc
     public partial class documentos : Window
     {
         string rama, carpeta;
-
+        clsDB db = new clsDB();
         public documentos(string r, string c)
         {
             InitializeComponent();
             lblTitulo.Content = string.Format("{0}/{1}",r, c);
             datos d = new datos();
-            populate(d.puestos, "puesto");
             rama = r;
             carpeta = c;
+            dgDocumentos.ItemsSource = db.read(string.Format("verDocs '{0}','{1}'",r, c)).DefaultView;
         }
 
         public void populate(string[] arreglo, string t)
@@ -56,26 +56,54 @@ namespace ctrl_doc
             {
                 DataTable dt = new DataTable();
                 dt = ((DataView)dgDocumentos.ItemsSource).ToTable();
-                int cod = Convert.ToInt32(dt.Rows[si][0]);
-                string doc = dt.Rows[si][1].ToString();
-                blank b = new blank(new rdocumentoUI(cod, doc, rama, carpeta));
+                int id = Convert.ToInt32(dt.Rows[si][0]);
+                string cod = dt.Rows[si][1].ToString();
+                string doc = dt.Rows[si][2].ToString();
+                blank b = new blank(new rdocumentoUI(id, cod, doc));
                 b.ShowDialog();
             }
         }
 
         private void Menu_historial_Click(object sender, RoutedEventArgs e)
         {
-
+            int si = dgDocumentos.SelectedIndex;
+            if (si >= 0)
+            {
+                DataTable dt = new DataTable();
+                dt = ((DataView)dgDocumentos.ItemsSource).ToTable();
+                int cod = Convert.ToInt32(dt.Rows[si][0]);
+                string doc = dt.Rows[si][1].ToString();
+                historial h = new historial(cod, doc);
+                h.ShowDialog();
+            }
         }
 
         private void Menu_cancelar_Click(object sender, RoutedEventArgs e)
         {
-
+            int si = dgDocumentos.SelectedIndex;
+            if (si >= 0)
+            {
+                DataTable dt = new DataTable();
+                dt = ((DataView)dgDocumentos.ItemsSource).ToTable();
+                int cod = Convert.ToInt32(dt.Rows[si][0]);
+                string doc = dt.Rows[si][1].ToString();
+                cancelarDoc cd = new cancelarDoc(cod, doc);
+                cd.ShowDialog();
+            }
         }
 
         private void Menu_habilitar_Click(object sender, RoutedEventArgs e)
         {
-
+            int si = dgDocumentos.SelectedIndex;
+            if (si >= 0)
+            {
+                DataTable dt = new DataTable();
+                dt = ((DataView)dgDocumentos.ItemsSource).ToTable();
+                int cod = Convert.ToInt32(dt.Rows[si][0]);
+                string doc = dt.Rows[si][1].ToString();
+                habilitarDoc cd = new habilitarDoc(cod, doc);
+                cd.ShowDialog();
+            }
         }
     }
 }
