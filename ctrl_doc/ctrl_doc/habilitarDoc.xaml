@@ -5,12 +5,12 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ctrl_doc"
         mc:Ignorable="d"
-        Title="Habilitar documento" Height="350" Width="500" ResizeMode="NoResize">
+        Title="Habilitar documento" Background="#610707" Height="350" Width="500" ResizeMode="NoResize">
     <StackPanel>
-        <Label Name="lblttl" FontSize="24" Content="cancelaciones" Margin="0,10,0,0" HorizontalAlignment="Center"></Label>
-        <Label Content="Comentarios:" Margin="25,0,0,0"></Label>
+        <Label Foreground="#ffffff" Name="lblttl" FontSize="24" Content="cancelaciones" Margin="0,10,0,0" HorizontalAlignment="Center"></Label>
+        <Label Foreground="#ffffff" Content="Comentarios:" Margin="25,0,0,0"></Label>
         <TextBox Name="txtCom" Margin="25,0,25,0" Height="100" TextWrapping="Wrap" AcceptsReturn="True"></TextBox>
-        <Label Content="Autorizo:" Margin="25,10,0,0"></Label>
+        <Label Foreground="#ffffff" Content="Autorizo:" Margin="25,10,0,0"></Label>
         <TextBox Name="txtAut" Margin="25,0,25,0" ></TextBox>
         <WrapPanel HorizontalAlignment="Right" Margin="0,10,0,0">
             <Button Name="btnvolv" Content="Volver" Margin="0,0,25,0" Click="btnvolv_Click"></Button>

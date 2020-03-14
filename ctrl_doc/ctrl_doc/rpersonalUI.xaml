@@ -7,22 +7,22 @@
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
     <StackPanel>
-        <Label Content="Registro de personal" FontSize="24" Margin="0,30,0,0" HorizontalAlignment="Center"></Label>
+        <Label Foreground="#ffffff" Content="Registro de personal" FontSize="24" Margin="0,30,0,0" HorizontalAlignment="Center"></Label>
 
-        <Label Content="Nombre Completo:" Margin="40,0,0,0"></Label>
+        <Label Content="Nombre Completo:" Margin="40,0,0,0" Foreground="#ffffff"></Label>
         <TextBox x:Name="txtName" Width="700"></TextBox>
         
         <WrapPanel Margin="50,20,0,0">
             <StackPanel>
-                <Label Content="Puesto:"></Label>
+                <Label Foreground="#ffffff" Content="Puesto:"></Label>
                 <ComboBox Name="cbxPuesto" Width="150"></ComboBox>
             </StackPanel>
             <StackPanel Margin="100,0,0,0">
-                <Label Content="M/O:"></Label>
+                <Label Foreground="#ffffff" Content="M/O:"></Label>
                 <ComboBox Name="cbxOM" Width="150"></ComboBox>
             </StackPanel>
             <StackPanel Margin="100,0,0,0">
-                <Label Content="Area:"></Label>
+                <Label Foreground="#ffffff" Content="Area:"></Label>
                 <ComboBox Name="cbxArea" Width="150"></ComboBox>
             </StackPanel>
         </WrapPanel>

@@ -5,9 +5,9 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ctrl_doc"
         mc:Ignorable="d"
-        Title="Historial" Height="450" Width="800" ResizeMode="NoResize">
+        Title="Historial" Background="#610707" Height="450" Width="800" ResizeMode="NoResize">
     <StackPanel>
-        <Label Name="lblTitulo" Content="titulo" FontSize="24" Margin="0,30,0,0" HorizontalAlignment="Center"/>
+        <Label Foreground="#ffffff" Name="lblTitulo" Content="titulo" FontSize="24" Margin="0,30,0,0" HorizontalAlignment="Center"/>
         <ScrollViewer MaxHeight="350">
             <DataGrid Margin="25,0,25,0" Name="dgDocumentos" CanUserReorderColumns="False" ColumnWidth="auto" MaxHeight="350" CanUserResizeRows="False" CanUserResizeColumns="False" IsReadOnly="True" GridLinesVisibility="None">
 

@@ -5,9 +5,9 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ctrl_doc"
         mc:Ignorable="d"
-        Title="documentos" ResizeMode="NoResize" Height="450" Width="800">
+        Title="documentos" Background="#610707" ResizeMode="NoResize" Height="450" Width="800">
     <StackPanel>
-        <Label Name="lblTitulo" Content="x" FontSize="24" Margin="0,30,0,0" HorizontalAlignment="Center"/>
+        <Label Foreground="#ffffff" Name="lblTitulo" Content="x" FontSize="24" Margin="0,30,0,0" HorizontalAlignment="Center"/>
         <ScrollViewer MaxHeight="350">
             <DataGrid Name="dgDocumentos"  MaxHeight="350" CanUserReorderColumns="False" CanUserResizeRows="False" CanUserResizeColumns="False" IsReadOnly="True" GridLinesVisibility="None">
                 <DataGrid.ContextMenu>

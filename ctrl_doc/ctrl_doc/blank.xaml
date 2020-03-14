@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ctrl_doc"
         mc:Ignorable="d"
-        Title="blank" Height="450" ResizeMode="NoResize" Width="800">
+        Title="blank" Height="450" ResizeMode="NoResize" Width="800" Background="#610707">
     <Grid x:Name="target">
         
     </Grid>

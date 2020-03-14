@@ -7,7 +7,7 @@
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
     <StackPanel>
-        <Label Name="lblTitulo" Content="x" FontSize="24" Margin="0,30,0,0" HorizontalAlignment="Center"/>
+        <Label Foreground="#ffffff" Name="lblTitulo" Content="x" FontSize="24" Margin="0,30,0,0" HorizontalAlignment="Center"/>
         <ScrollViewer MaxHeight="350">
             <DataGrid Name="dgCarpetas"  MaxHeight="350" CanUserResizeRows="False" CanUserResizeColumns="False" IsReadOnly="True" GridLinesVisibility="None">
 

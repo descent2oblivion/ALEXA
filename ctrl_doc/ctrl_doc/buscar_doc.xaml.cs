@@ -35,13 +35,25 @@ namespace ctrl_doc
                 if (radio_code.IsChecked == true)
                 {
                     DataTable dt = new DataTable();
-                    dt = db.read(string.Format("verDoc '{0}'", txtSearchDoc.Text));
+                    dt = db.read(string.Format("buscarCodigo '{0}'", txtSearchDoc.Text));
 
-                    int aidi = Convert.ToInt32(dt.Rows[0][0]);
-                    string cod = dt.Rows[0][1].ToString();
-                    string doc = dt.Rows[0][1].ToString();
-                    blank b = new blank(new rdocumentoUI(aidi, cod, doc));
-                    b.ShowDialog();
+
+                    int aidi = 0;
+                    string cod = "";
+                    string doc = "";
+                    try
+                    {
+                        aidi = Convert.ToInt32(dt.Rows[0][0]);
+                        cod = "";
+                        doc = "";
+
+                        blank b = new blank(new rdocumentoUI(aidi, cod, doc));
+                        b.ShowDialog();
+                    }
+                    catch (Exception z)
+                    {
+                        MessageBox.Show("Documento no encontrado, favor de verificar el codigo");
+                    }
                 }
 
                 if (radio_name.IsChecked == true)
@@ -49,11 +61,19 @@ namespace ctrl_doc
                     DataTable dt = new DataTable();
                     dt = db.read(string.Format("buscarNombre '{0}'", txtSearchDoc.Text));
 
-                    int aidi = Convert.ToInt32(dt.Rows[0][0]);
-                    string cod = "Te Amo Dina Michelle";
-                    string doc = "muchisimo corazon!!!!";
-                    blank b = new blank(new rdocumentoUI(aidi, cod, doc));
-                    b.ShowDialog();
+                    try
+                    {
+                        int aidi = Convert.ToInt32(dt.Rows[0][0]);
+                        string cod = "";
+                        string doc = "";
+                        blank b = new blank(new rdocumentoUI(aidi, cod, doc));
+                        b.ShowDialog();
+                    }
+                    catch (Exception)
+                    {
+                        MessageBox.Show("Documento no encontrado, favor de verificar el nombre");
+                    }
+                    
                 }
             }
         }

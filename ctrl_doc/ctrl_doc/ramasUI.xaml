@@ -7,7 +7,7 @@
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
     <StackPanel>
-        <Label Content="Ramas" Name="lblTitulo" FontSize="24" Margin="0,30,0,0" HorizontalAlignment="Center"/>
+        <Label Foreground="#ffffff" Content="Ramas" Name="lblTitulo" FontSize="24" Margin="0,30,0,0" HorizontalAlignment="Center"/>
         <ScrollViewer MaxHeight="350">
             <DataGrid Name="dgRamas" MouseDoubleClick="DgRamas_MouseDoubleClick" MaxHeight="350" CanUserResizeRows="False" CanUserResizeColumns="False" IsReadOnly="True" GridLinesVisibility="None">
 
